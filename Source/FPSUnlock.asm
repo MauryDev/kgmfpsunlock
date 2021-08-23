@@ -70,7 +70,7 @@ FPS_Limit_Value:
 dd 0
 
 section '.idata' import data readable writeable
-  library kernel,'GetModuleHandleA'
+  library kernel,'kernel32.dll'
 
   import kernel,\
          GetModuleHandleA,'GetModuleHandleA'
