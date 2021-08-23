@@ -1,5 +1,4 @@
 
-; DLL creation example
 
 format PE GUI 4.0 DLL
 entry DllEntryPoint
@@ -11,7 +10,7 @@ macro DO_API_UnityPlay offset,method_ptr
     add eax,offset
     mov [method_ptr],eax
 }
-macro UnityInvoke proc,[arg]                ; indirectly call CDECL procedure
+macro UnityInvoke proc,[arg]                ; indirectly call Unity procedure
  { common
     size@ccall = 0
     if ~ arg eq
